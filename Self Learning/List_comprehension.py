@@ -34,3 +34,15 @@ print(food)
 food.clear()
 print(food)
 
+# 2D list
+# a list of lists
+
+drinks = ["coffee", "soda", "tea", "Soft-Drink"]
+dinner = ["pizza", "chowmein", "biryani"]
+dessert = ["ice-cream", "faluda", "cup-cake"]
+
+menu = [drinks, dinner, dessert]
+
+print(menu)
+print(menu[0][1])  # accessing elements of list within a list
+
