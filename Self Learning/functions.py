@@ -3,6 +3,7 @@
 # Keyword Arguments: arguments preceded by an identifier
 
 
+
 def love(she, me, age):
     print("know that: " + she + " loves " + me)
     print("her age is " + str(age) + " and my age is " + str(age))
@@ -86,4 +87,37 @@ def quotient(n1, n2):
 
 
 print(quotient(num1, num2))
+
+
+# nested function calls: function calls inside other
+# function calls.
+# Inner most function is executed/resolved first.
+# The return value of each nested function is used as
+# argument for the outer function.
+num = 65.589
+num = float(num)
+num = abs(num)
+num = round(num)
+print(num)
+
+# nested way
+print(round(abs(float(65.589))))
+
+
+# scope of a variable: The region that a variable is recognised
+# If not declared global or local scope, a variable's scope is
+# within its function.
+
+name = "Prateek Tripathi"
+print(name)
+# global scoped: available inside and outside function
+
+
+def display_name():
+    name = "Pragya"
+    # local scope: available inside the function only
+    print(name)
+
+
+display_name()
 
