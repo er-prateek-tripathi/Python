@@ -45,8 +45,41 @@ import shutil
 
 shutil.copyfile('test.txt', 'copy.txt')  # args = source, destination
 # we can use different destination for creating copy file.
-'''
 
 # moving files
+
+source = "moved.txt"
+destination = "D:\\Programming\\Python\\Ineuron\\moved.txt"
+# line 51 and 51 movement was successful.
+# O/P: moved.txt was moved!!
+
+# now bringing back the file
+
+source = "D:\\Programming\\Python\\Ineuron\\moved.txt"
+destination = "D:\\Programming\\Python\\Self Learning\\moved.txt"
+# this also worked.
+# according to my system permission, i can move files within the project.
+
+# trying to move a directory now.
+# source = "D:\\Programming\\Python\\moving"
+# destination = "D:\\Programming\\Python\\Self Learning\\moving"
+# this worked too. I am deleting the folder now.
+try:
+    # Check if the destination file exists.
+    if os.path.exists(destination):
+        print("File already available!!")
+    else:
+        # Move the file to the destination.
+        os.replace(source, destination)
+        print(source + " was moved!!")
+except FileNotFoundError:
+    # If the source file does not exist, print an error message and exit.
+    print(source + " was not found.")
+except OSError as e:
+    # If another error occurs, print the error message and exit.
+    print(e)
+'''
+
+
 
 
