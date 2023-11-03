@@ -24,6 +24,7 @@ print(love("Pragya", "Prateek", 23))
 
 print("\n n1 = 8, n2 = 4")
 
+
 num1 = 8
 num2 = 4
 
