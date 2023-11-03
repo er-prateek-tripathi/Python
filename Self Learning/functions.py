@@ -1,5 +1,7 @@
-# function = a block of code which is
-# executed only when it is called
+# function = a block of code which is executed
+# only when it is called
+# Keyword Arguments: arguments preceded by an identifier
+
 
 def love(she, me, age):
     print("know that: " + she + " loves " + me)
@@ -8,6 +10,12 @@ def love(she, me, age):
     return she + me
 
 
+# Keyword Argument: writing the name of the arguments
+# while passing the value. Here order doesn't matter
+love(me="Prateek", she="Pragya", age=23)
+
+# Positional Arguments: Providing values to the arguments
+# in an ordered manner. Here order of parameters does matter.
 love("Pragya", "Prateek", 23)
 love("Pragya", "Prateek", 23)
 love("Pragya", "Prateek", 23)
