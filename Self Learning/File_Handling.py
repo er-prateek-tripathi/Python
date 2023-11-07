@@ -1,6 +1,6 @@
 import os
+import shutil
 
-'''
 # reading files
 path = "E:\\test.txt"
 path1 = "E:\\Newfolder"
@@ -16,8 +16,8 @@ if os.path.exists(path):
 else:
     print("File doesn't Exist!!")
 
-# Copying files
 
+# Copying files
 # if file is in some other directory, full file path is required
 # while using with keyword, you do not need to close the file separately
 # r - read, w - write. a - append
@@ -38,7 +38,6 @@ with open('text1.txt', 'w') as file1:
 with open('text1.txt', 'a') as file2:
     file2.write(text3)
 
-import shutil
 # copyfile() = copies contents of a file
 # copy() = copyfile() + permission mode + destination can be a directory
 # copy2() = copy() + copies metadata (file's creation and o=modification times)
@@ -46,8 +45,8 @@ import shutil
 shutil.copyfile('test.txt', 'copy.txt')  # args = source, destination
 # we can use different destination for creating copy file.
 
-# moving files
 
+# moving files
 source = "moved.txt"
 destination = "D:\\Programming\\Python\\Ineuron\\moved.txt"
 # line 51 and 51 movement was successful.
@@ -78,8 +77,21 @@ except FileNotFoundError:
 except OSError as e:
     # If another error occurs, print the error message and exit.
     print(e)
-'''
 
 
+# deleting a file
+
+path = 'test.txt'
+os.remove(path)
+# file deleted
+
+# removing folder
+os.rmdir('empty_folder')
+# folder deleted
+# this function cannot delete a folder that contains a file
+
+# removing a non-empty folder
+shutil.rmtree('folder')
+# folder removed
 
 
