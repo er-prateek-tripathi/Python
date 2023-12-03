@@ -12,6 +12,10 @@ arg2: 3 rows
 arg3: 4 columns
 
 We should return an 3x4 array = bomb
+output:
+[[-1, 2, 1, 1],
+[1, 2, -1, 1],
+[0, 1, 1, 1]]
 
 """
 
